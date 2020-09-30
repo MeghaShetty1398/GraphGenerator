@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<style>
+			#content{
+				padding-top: 5%;
+			}
+            nav{
+				background-color: #cc0066;
+				color:#fff;
+				padding: 20px 40px;
+				display: flex;
+				justify-content: space-between;
+				width: 100%;
+				position: fixed;
+				margin-top: 0px;
+				z-index:99;
+			}
+			nav ul{
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+			}
+			nav li{
+				list-style: none;
+			}
+			nav li a{
+				color :#fff;
+				text-decoration: none;
+				font-weight: bold;
+				padding: 5px 8px;
+			}
+			nav li a:hover{
+				background-color: #ff80b3;
+				color:black;
+				text-decoration: none;
+			}
+            .btn{
+                border-top: 3px solid black;
+                border-left: 3px solid black;
+                border-right: 3px solid black;
+                font-weight: 1000;
+                color: #cc0066;
+            }
+			.btn:hover{
+				background-color: #cc0066;
+				color:white;
+			}
+		</style>
+		<title>Graph Generator</title>
+    </head>
+		<body class="home">
+			<nav>
+				<h4><img src="logo" height="30px" width="50px"></img>Graph Generator </h4>
+				<ul>
+					<li><a href="/login">Login</a></li>
+					<li><a href="/">Register</a></li>
+				</ul>
+            </nav>
+			<br><br>
+			<div id="content">
+            <div class="container-fixed">
+               <div class="card" style="width:31%;float: left;margin-left:3%;" >
+                    <button class="btn" onclick="window.location = '/bar_chart'" >Create Bar Chart </button>
+                  <img class="card-img-top" src="barchart_img" alt="Card image" style="width:100%;border: 3px solid black;height:350px;">
+                </div>
+                <div class="card" style="width:31%;float: left;" >
+                    <button class="btn" onclick="window.location = '/pie_chart'" >Create Pie Chart </button>
+                  <img class="card-img-top" src="piechart_img" alt="Card image" style="width:100%;border: 3px solid black;height:350px;">
+                </div>&nbsp;&nbsp;
+                <div class="card" style="width:31%;float: left;" >
+                    <button class="btn" onclick="window.location = '/line_chart'">Create Line Chart </button>
+                  <img class="card-img-top" src="linechart_img" alt="Card image" style="width:100%;border: 3px solid black;height:350px;">
+                </div>
+                <br>
+                <div class="card" style="width:31%;float: left;margin-left:18%;" >
+                    <button class="btn" onclick="window.location = '/doughnut_chart'" >Create Doughnut Chart </button>
+                  <img class="card-img-top" src="doughnutchart_img" alt="Card image" style="width:100%;border: 3px solid black;height:350px;">
+                </div>
+                <div class="card" style="width:31%;float: left;" >
+                    <button class="btn" onclick="window.location = '/horizontal_bar_chart'" >Create Horizontal Bar Chart </button>
+                  <img class="card-img-top" src="horizontalbarchart_img" alt="Card image" style="width:100%;border: 3px solid black;height:350px;">
+                </div>&nbsp;&nbsp;
+			</div>
+		</div>
+	    </body>
+</html>
